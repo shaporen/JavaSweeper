@@ -25,7 +25,8 @@ public class JavaSweeper extends JFrame {
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                g.drawImage(getImage("icon"), 0, 0, this);
+                g.drawImage(getImage("bomb"), 0, 0, this);
+                g.drawImage(getImage("num1"), IMAGE_SIZE, 0, this);
             }
         };
         panel.setPreferredSize(new Dimension(
@@ -42,7 +43,7 @@ public class JavaSweeper extends JFrame {
     }
 
     private Image getImage(String name) {
-        String filename = "/img" + name.toLowerCase() + ".png";
+        String filename = "/img/" + name.toLowerCase() + ".png";
         ImageIcon icon = new ImageIcon(getClass().getResource(filename));
         return icon.getImage();
     }
