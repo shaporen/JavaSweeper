@@ -1,13 +1,17 @@
 package org.shaporen;
 
+import org.shaporen.sweeper.*;
+import org.shaporen.sweeper.Box;
+import org.shaporen.sweeper.Ranges;
+
 import javax.swing.*;
 import java.awt.*;
 
 public class JavaSweeper extends JFrame {
-
+    private Game game;
     private JPanel panel;
-    private final int COLS = 15;
-    private final int ROWS = 1;
+    private final int COLS = 9;
+    private final int ROWS = 9;
     private final int IMAGE_SIZE = 50;
 
     public static void main(String[] args) {
@@ -15,22 +19,25 @@ public class JavaSweeper extends JFrame {
     }
 
     private JavaSweeper() {
+        game = new Game(COLS, ROWS, 5);
+        setImages();
         initPanel();
         initFrame();
     }
 
     private void initPanel() {
         panel = new JPanel() {
-
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                g.drawImage(getImage("bomb"), 0, 0, this);
-                g.drawImage(getImage("num1"), IMAGE_SIZE, 0, this);
+                for (Coord coord : Ranges.getAllCoords()) {
+                    g.drawImage((Image)game.getBox(coord).image, coord.x * IMAGE_SIZE, coord.y * IMAGE_SIZE, this);
+                }
             }
         };
         panel.setPreferredSize(new Dimension(
-                COLS * IMAGE_SIZE, ROWS * IMAGE_SIZE));
+                Ranges.getSize().x * IMAGE_SIZE,
+                Ranges.getSize().y * IMAGE_SIZE));
         add(panel);
     }
     private void initFrame() {
@@ -40,6 +47,13 @@ public class JavaSweeper extends JFrame {
         setLocationRelativeTo(null);
         setResizable(false);
         setVisible(true);
+        setIconImage(getImage("icon"));
+    }
+
+    private void setImages() {
+        for (Box box : Box.values()) {
+            box.image = getImage(box.name().toLowerCase());
+        }
     }
 
     private Image getImage(String name) {
