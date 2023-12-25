@@ -9,15 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93b5b539-48ce-42d3-9c3f-585d5f75a776" name="Changes" comment="0.38">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/JavaSweeper_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/shaporen/sweeper/Box.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/shaporen/sweeper/Coord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/shaporen/sweeper/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/shaporen/sweeper/Ranges.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+    <list default="true" id="93b5b539-48ce-42d3-9c3f-585d5f75a776" name="Changes" comment="1.32">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/shaporen/JavaSweeper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/shaporen/JavaSweeper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703288849596</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1.32">
+      <created>1703369755982</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703369755982</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,6 +114,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="JavaSweeper" />
     <MESSAGE value="0.38" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.38" />
+    <MESSAGE value="1.32" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.32" />
   </component>
 </project>
