@@ -9,11 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93b5b539-48ce-42d3-9c3f-585d5f75a776" name="Changes" comment="1.59">
+    <list default="true" id="93b5b539-48ce-42d3-9c3f-585d5f75a776" name="Changes" comment="2.10">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/shaporen/sweeper/Flag.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/shaporen/sweeper/Bomb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/shaporen/sweeper/Bomb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/shaporen/sweeper/Coord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/shaporen/sweeper/Coord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/shaporen/sweeper/Ranges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/shaporen/sweeper/Ranges.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/shaporen/sweeper/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/shaporen/sweeper/Box.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/shaporen/sweeper/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/shaporen/sweeper/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +25,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="UML Sequence" />
         <option value="UML Use Case" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -119,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703581996841</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="2.10">
+      <created>1703584271774</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703584271774</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,6 +148,7 @@
     <MESSAGE value="1.32" />
     <MESSAGE value="двуслойная матрица" />
     <MESSAGE value="1.59" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.59" />
+    <MESSAGE value="2.10" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.10" />
   </component>
 </project>

@@ -6,6 +6,7 @@ class Bomb {
 
     public Bomb(int totalBombs) {
         this.totalBombs = totalBombs;
+        fixMaxBombs();
     }
 
     void start() {
@@ -18,11 +19,31 @@ class Bomb {
     Box get(Coord coord) {
         return bombMap.get(coord);
     }
+
+    private void fixMaxBombs() {
+        int maxBombs = Ranges.getSize().x * Ranges.getSize().y / 2;
+        if (totalBombs > maxBombs) {
+            totalBombs = maxBombs;
+        }
+    }
+
     private void placeBomb() {
-        Coord coord = Ranges.getRandomCoord();
-        bombMap.set(coord, Box.BOMB);
+        while(true){
+            Coord coord = Ranges.getRandomCoord();
+            if (Box.BOMB == bombMap.get(coord)) {
+                continue;
+            }
+            bombMap.set(coord, Box.BOMB);
+            incNumbersAroundBomb(coord);
+            break;
+        }
+    }
+
+    private void incNumbersAroundBomb(Coord coord) {
         for (Coord around : Ranges.getCoordsAround(coord)) {
-            bombMap.set(around, Box.NUM1);
+            if (bombMap.get(around) != Box.BOMB) {
+                bombMap.set(around, bombMap.get(around).getNextNumberBox());
+            }
         }
     }
 }

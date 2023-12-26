@@ -2,18 +2,25 @@ package org.shaporen.sweeper;
 
 public class Game {
 
-    Bomb bomb;
+    private Bomb bomb;
+    private Flag flag;
 
     public Game(int cols, int rows, int bombs) {
         Ranges.setSize(new Coord(cols, rows));
         bomb = new Bomb(bombs);
+        flag = new Flag();
     }
 
     public void start() {
         bomb.start();
+        flag.start();
     }
 
     public Box getBox(Coord coord) {
-        return bomb.get(coord);
+        if (flag.get(coord) == Box.OPENED) {
+            return bomb.get(coord);
+        } else {
+            return flag.get(coord);
+        }
     }
 }
