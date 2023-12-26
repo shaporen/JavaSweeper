@@ -9,8 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93b5b539-48ce-42d3-9c3f-585d5f75a776" name="Changes" comment="1.32">
+    <list default="true" id="93b5b539-48ce-42d3-9c3f-585d5f75a776" name="Changes" comment="двуслойная матрица">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/shaporen/sweeper/Bomb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/shaporen/JavaSweeper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/shaporen/JavaSweeper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/shaporen/sweeper/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/shaporen/sweeper/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/shaporen/sweeper/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/shaporen/sweeper/Matrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/shaporen/sweeper/Ranges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/shaporen/sweeper/Ranges.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +27,8 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="UML Sequence" />
+        <option value="UML Use Case" />
       </list>
     </option>
   </component>
@@ -42,6 +49,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultPlantUmlFileTemplate": "UML Use Case",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -49,7 +57,7 @@
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   },
   "keyToStringList": {
     "ChangesTree.GroupingKeys": [
@@ -58,6 +66,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.shaporen.sweeper" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\projects\JavaSweeper\src\main\resources" />
       <recent name="C:\projects\JavaSweeper\src\res" />
@@ -96,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703369755982</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="двуслойная матрица">
+      <created>1703504508119</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703504508119</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -115,6 +133,7 @@
     <MESSAGE value="JavaSweeper" />
     <MESSAGE value="0.38" />
     <MESSAGE value="1.32" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.32" />
+    <MESSAGE value="двуслойная матрица" />
+    <option name="LAST_COMMIT_MESSAGE" value="двуслойная матрица" />
   </component>
 </project>
