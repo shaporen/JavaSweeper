@@ -1,8 +1,7 @@
 package org.shaporen;
 
-import org.shaporen.sweeper.*;
 import org.shaporen.sweeper.Box;
-import org.shaporen.sweeper.Ranges;
+import org.shaporen.sweeper.*;
 
 import javax.swing.*;
 import java.awt.*;
