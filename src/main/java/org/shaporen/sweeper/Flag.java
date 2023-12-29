@@ -2,8 +2,10 @@ package org.shaporen.sweeper;
 
 class Flag {
     private Matrix flagMap;
+    private int countOfClosedBoxes;
     void start() {
         flagMap = new Matrix(Box.CLOSED);
+        countOfClosedBoxes = Ranges.getSize().x * Ranges.getSize().y;
     }
 
     Box get(Coord coord) {
@@ -20,6 +22,7 @@ class Flag {
 
     private void setClosedToBox(Coord coord) {
         flagMap.set(coord, Box.CLOSED);
+        countOfClosedBoxes--;
     }
 
     public void toggleFlagedToBox(Coord coord) {
@@ -29,5 +32,35 @@ class Flag {
             case CLOSED : setFlagedToBox(coord);
                 break;
         }
+    }
+
+    int getCountOfClosedBoxes() {
+        return countOfClosedBoxes;
+    }
+
+    public void setBombedToBox(Coord coord) {
+        flagMap.set(coord, Box.BOMBED);
+    }
+
+    void setOpenedToClosedBombBox(Coord coord) {
+        if (flagMap.get(coord) == Box.CLOSED) {
+            flagMap.set(coord, Box.OPENED);
+        }
+    }
+
+    void setNoBombToFlaggedSafeBox(Coord coord) {
+        if (flagMap.get(coord) == Box.FLAGED) {
+            flagMap.set(coord, Box.NOBOMB);
+        }
+    }
+
+    int getCountOfFlaggedBoxesAround(Coord coord) {
+        int count = 0;
+        for (Coord around : Ranges.getCoordsAround(coord)) {
+            if (flagMap.get(around) == Box.FLAGED) {
+                count++;
+            }
+        }
+        return count;
     }
 }
